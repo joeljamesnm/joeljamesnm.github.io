@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(21, 24, 37);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    padding: 1% 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    width: 60px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #12F8E8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-zone {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 15px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.text-zone h1 {
+    font-size: 75px;
+    line-height: 80px;
+}
+
+.text-zone p {
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.text-zone a {
+    margin-top: 20px;
+    display: inline-block;
+    border: 2px solid #12F8E8;
+    border-radius: 3px;
+    color: #12F8E8;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 500;  
+    margin-right: 30px;
+}
+
+.text-zone a:hover {
+    background: #12F8E8;
+    color: rgb(21, 24, 37);
+    transition: 0.5s;
+}
+
+.myPic {
+    width: 300px;
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    border-radius: 10px;
+}
+
+.auto-type {
+    color: #12F8E8;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav .logo { width: 35px; }
+    .text-zone {
+        top: 60%;
+        left: 10%;
+    }
+    .text-zone h1 {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    .text-zone p {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .text-zone a {
+        margin-top: 40px;
+        font-size: 12px;
+        padding: 5px 20px;
+        font-weight: 500;  
+        margin-right: 20px;
+        margin-left: 13px;
+    }
+    .myPic {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 30% 10%;
+        position: fixed;
+        left: 25%;
+        bottom: 50%;
+        border-radius: 50%;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    nav {
+        padding: 5% 8%;
+    }
+    .nav-links {
+        background: rgb(30, 30, 36);
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: #12F8E8;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}

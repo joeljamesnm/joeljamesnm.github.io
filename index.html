@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=with=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ab7c518868.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link rel="icon" href="images/Logoko.png" type="image/x-icon">
+        <title>Joel James | Website Portfolio</title>
+        
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/Logoko.png" class="logo"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Cs.html">about</a></li>
+                        <li><a href="Cs.html">my skills</a></li>
+                        <li><a href="Cs.html">projects</a></li>
+                        <li><a href="Cs.html">contact</a></li>
+                        <li><a href="Cs.html">blog</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-zone">
+                <h1>Hi,</h1>
+                <h1>I'm <span class="auto-type"></span></h1>
+                <p>You can reach out to me if you need any help in making a<br>website for you or your business.</p>
+                <a href="#">Contact Me</a>
+                <a href="#">Download CV</a>
+            </div>
+            <img src="images/jjpic.jpg" class="myPic">
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>    
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Joel James", "Web Developer", "UI Designer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })
+            
+        </script>
+        <script>
+            var navlinks = document.getElementById('navlinks');
+
+            function showMenu() {
+                navlinks.style.right = "0";
+            }
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+        
+    </body>
+</html>
