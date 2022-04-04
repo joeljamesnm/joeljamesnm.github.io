@@ -147,11 +147,11 @@ nav .fa-solid {
         object-fit: cover;
         object-position: 30% 10%;
         position: fixed;
-        left: 21%;
+        left: 22%;
         bottom: 50%;
         border-radius: 50%;
         border: 5px solid transparent;
-        outline: #12F8E8 solid 2px;
+        outline: #12F8E8 solid 4px;
     }
     .nav-links ul li {
         display: block;
