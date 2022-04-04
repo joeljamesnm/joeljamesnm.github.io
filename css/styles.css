@@ -151,7 +151,7 @@ nav .fa-solid {
         bottom: 50%;
         border-radius: 50%;
         border: 5px solid transparent;
-        outline: #12F8E8 solid 3px;
+        outline: #12F8E8 solid 2px;
     }
     .nav-links ul li {
         display: block;
