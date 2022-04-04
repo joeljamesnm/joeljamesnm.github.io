@@ -115,8 +115,9 @@ nav .fa-solid {
 @media (max-width: 700px) {
     nav .logo { width: 35px; }
     .text-zone {
-        top: 50%;
+        top: 55%;
         left: 10%;
+        text-align: center;
     }
     .text-zone h1 {
         font-size: 2rem;
@@ -135,6 +136,10 @@ nav .fa-solid {
         font-weight: 500;  
         margin-right: 20px;
         margin-left: 13px;
+        border-radius: 20px;
+    }
+    .text-zone  .contact-btn{
+        padding: 5px 25px 5px 25px;
     }
     .myPic {
         width: 200px;
@@ -142,9 +147,11 @@ nav .fa-solid {
         object-fit: cover;
         object-position: 30% 10%;
         position: fixed;
-        left: 25%;
+        left: 21%;
         bottom: 50%;
         border-radius: 50%;
+        border: 5px solid transparent;
+        outline: #12F8E8 solid 3px;
     }
     .nav-links ul li {
         display: block;
